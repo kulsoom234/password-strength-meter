@@ -13,7 +13,7 @@ def check_password(password):
     else:
         tips.append("Include upper letter.")
     if any (c.islower() for c in password):
-        scopre += 1
+        score += 1
     else:
         tips.append("Include lower letter.")
     if any (c.isdigit() for c in password):
